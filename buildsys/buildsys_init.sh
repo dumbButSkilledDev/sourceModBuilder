@@ -179,8 +179,8 @@ cp -r "/c/Program Files (x86)/steam/steamapps/common/Source SDK Base 2013 Single
 logBlue "[BUILD] (stage 2) Copying hl2.exe from Source SDK Base 2013 Singleplayer..."
 cp "/c/Program Files (x86)/steam/steamapps/common/Source SDK Base 2013 Singleplayer/hl2.exe" bin/structure/sourcemods/$GAME_SHORTNAME/$GAME_SHORTNAME.exe
 logBlue "[BUILD] (stage 3) Copying the built client.dll and server.dll to bin/structure/sourcemods/$GAME_SHORTNAME/bin..."
-cp build/engine/bin/client.dll bin/structure/sourcemods/$GAME_SHORTNAME/bin
-cp build/engine/bin/server.dll bin/structure/sourcemods/$GAME_SHORTNAME/bin
+cp build/engine/bin/client.dll bin/structure/sourcemods/$GAME_SHORTNAME/
+cp build/engine/bin/server.dll bin/structure/sourcemods/$GAME_SHORTNAME/
 logGreen "[BUILD] Binaries copied!"
 
 mkdir -p bin/$GAME_SHORTNAME/testing/
